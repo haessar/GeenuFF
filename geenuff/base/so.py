@@ -3785,6 +3785,7 @@ TRANSPOSABLE_ELEMENT_CDS = "transposable_element_CDS"
 ORPHAN_CDS = "orphan_CDS"
 CDS_FRAGMENT = "CDS_fragment"
 CDS = "CDS"
+NONTRANSLATING_CDS = "nontranslating_CDS"
 
 SOCDSFeatures = make_enum("SOCDSFeatures",
                           CDS_SUPPORTED_BY_EST_OR_CDNA_DATA,
@@ -3797,5 +3798,6 @@ SOCDSFeatures = make_enum("SOCDSFeatures",
                           ORPHAN_CDS,
                           CDS_FRAGMENT,
                           CDS,
+                          NONTRANSLATING_CDS,
 )
 
