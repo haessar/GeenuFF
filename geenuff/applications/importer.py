@@ -316,7 +316,8 @@ class OrganizedGeenuffImporterGroup(object):
             if protein_id:
                 protein_ids.add(protein_id)
         if len(protein_ids) != 1:
-            raise ValueError('No protein_id or more than one protein_ids for one transcript')
+            logging.warning('No protein_id or more than one protein_ids for one transcript')
+            # raise ValueError('No protein_id or more than one protein_ids for one transcript')
         return protein_ids.pop()
 
 
